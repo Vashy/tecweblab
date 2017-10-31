@@ -1,0 +1,57 @@
+.midImage, .bigImage, #logo {
+  display: none;
+}
+
+body {
+  width: 100%;
+  border: none;
+  font-size: 1.2em;
+}
+#nav {
+  float: none;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+#nav ul li a, #active {
+  padding: 0.4em;
+}
+
+#nav ul li a {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+#nav ul li:first-child {
+  border-top: 1px solid #ccc;
+}
+
+#nav ul li a:hover {
+  font-size: 110%;
+}
+
+#main_body {
+  margin: 0;
+  border: none;
+}
+
+#main_body p {
+  padding: 0.2em;
+  margin: 0;
+}
+
+#footer {
+  clear: none;
+  margin: 0;
+  padding: 0.2em;
+  text-align: center;
+}
+#footer p {
+  width: 100%;
+
+}
+
+#footer img {
+  display: none;
+}

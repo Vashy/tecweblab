@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  max-width: 1300px;
+}
+
+body {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  font-size: 1em;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  border: 1px solid;
+}
+
+/*header*/
+
+#logo {
+  position: relative;
+  display: block;
+  margin: 1%;
+  max-width: 7em;
+  float: left;
+}
+
+#header {
+  margin: 0;
+  padding: 0;
+}
+
+#header h1 {
+  color: #cc0000;
+  font-size: 3.5em;
+  font-variant: small-caps;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#header h3 {
+  font-style: italic;
+  text-align: center;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 1% 0 0 0;
+}
+
+.headerTitle {
+  padding: 3%;
+}
+
+/*Mid banner*/
+
+#midBanner {
+  clear: both;
+  position: relative;
+  background-color: #cc0000;
+}
+
+#midBanner p {
+  padding: 0.7%;
+  font-weight: 900;
+  color: #fff;
+}
+
+/*nav*/
+
+#nav {
+  position: relative;
+  float: left;
+  width: 15%;
+}
+
+#nav ul {
+  list-style-type: none;
+}
+
+#nav ul li a, #active {
+  display: block;
+  text-decoration: none;
+  padding: 5%;
+  font-size: 110%;
+  border-bottom: 1px solid #ccc;
+  transition: 0.2s;
+  overflow-x: hidden;
+}
+
+#nav ul li a {
+  color: #cc0000;
+}
+
+#nav ul li a:hover {
+  background-color: #cc0000;
+  color: #fff;
+  font-size: 120%;
+}
+
+/*content*/
+
+#main_body {
+  position: relative;
+  margin-left: 15%;
+  border-left: 1px solid #ccc;
+  padding: 2%;
+}
+
+#main_body h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 2%;
+}
+
+/*images*/
+
+.bigImage {
+  display: block;
+  margin: auto;
+  width: 86%;
+}
+
+.midImage{
+  display: block;
+  width: 70%;
+  margin: auto;
+}
+
+#main_body p {
+  margin: 3% 7% 3% 7%;
+  text-align: justify;
+}
+
+/*footer*/
+
+#footer {
+  position: relative;
+  clear: left;
+  background-color: #ccc;
+  padding: 1%;
+}
+
+#footer p {
+  font-size: 0.85em;
+  font-style: italic;
+  text-align: center;
+  width: 70%;
+  display: inline-block;
+}
+
+
+
+#leftFooterImage {
+  position: relative;
+  float: left;
+}
+
+#rightFooterImage {
+  float: right;
+}
+
+
+/*tables*/
+table {
+  margin: auto;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+th, tfoot td {
+  background-color: #cc0000;
+  color: #fff;
+}
+
+th, td {
+  padding: 1em;
+  border: 2px solid #ccc;
+  text-align: center;
+}
