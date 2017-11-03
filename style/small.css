@@ -1,4 +1,4 @@
-.midImage, .bigImage, #logo {
+.midImage, .bigImage, #logo, .rightImage, dd img {
   display: none;
 }
 
@@ -49,7 +49,6 @@ body {
 }
 #footer p {
   width: 100%;
-
 }
 
 #footer img {
