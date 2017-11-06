@@ -193,10 +193,12 @@ dd p {
 }
 
 #footer p {
+	text-align: center;
+	margin: auto;
+	display: block;
 	width: 60%;
-	margin: 0 0 0 13%;
 	font-size: 0.85em;
-	font-style: italic;
+	font-style: italic;`
 }
 
 #footer a {
@@ -208,18 +210,20 @@ dd p {
 }
 
 #leftFooterImage {
+	display: block;
 	float: left;
 }
 
 #rightFooterImage {
+	display: block;
 	float: right;
-	display: none;
 }
 
 /*tables*/
 
 table {
 	border-collapse: collapse;
+	margin: auto;
 }
 
 th, td {
@@ -227,6 +231,17 @@ th, td {
 }
 
 th {
-	padding: 3%;
+	padding: 1em;
 }
 
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
