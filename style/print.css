@@ -1,0 +1,52 @@
+#nav, #midBanner, img, .help {
+	display: none;
+}
+
+body {
+	font-size: 18px;
+}
+
+#header {
+	border-bottom: 1px solid;
+}
+#header h1 {
+	text-align: center;
+	font-size: 36px;
+	font-variant: small-caps;
+}
+
+#header h3 {
+	text-align: center;
+	font-size: 24px;
+	font-style: italic;
+}
+
+#main_body {
+	text-align: justify;
+}
+
+#main_body h1 {
+	font-size: 24px;
+}
+
+a { 
+	text-decoration: none;
+	font-weight: bold;
+	color: black;
+}
+
+#footer {
+	margin-top: 50px;
+	text-align: center;
+	font-style: italic;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 5px;
+	border: 1px solid;
+	text-align: center;
+}
