@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+	xmlns="http://www.protagonisti.com" 
+	targetNamespace="http://www.protagonisti.com"
+	elementFormDefault="qualified">
+
+<xs:element name="protagonisti">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="protagonista" type="Tprotagonista" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+    <xs:attribute name="serie" type="xs:string" use="required" />
+  </xs:complexType>
+</xs:element>
+
+<xs:complexType name="Tprotagonista">
+  <xs:sequence>
+    
+    <xs:element name="specializzazione" type="xs:string" />
+    
+    <xs:element name="qi" type="xs:positiveInteger" />
+    
+    <xs:element name="img">
+      <xs:complexType>
+        <xs:attribute name="src" type="xs:anyURI" use="required" />
+        <xs:attribute name="alt" type="xs:string" use="required" />
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="presenteIn">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="stagione" minOccurs="1" maxOccurs="unbounded">
+            <xs:simpleType>
+              <xs:restriction base="xs:string">
+                <xs:enumeration value="Prima stagione" />
+                <xs:enumeration value="Seconda stagione" />
+                <xs:enumeration value="Terza stagione" />
+                <xs:enumeration value="Quarta stagione" />
+              </xs:restriction>
+            </xs:simpleType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+    
+    <xs:element name="desc">
+      <xs:complexType>
+        <xs:sequence>
+          <xs:element name="p" minOccurs="1" maxOccurs="unbounded">
+            <xs:complexType mixed="true">
+              <xs:element name="em" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+            </xs:complexType>
+          </xs:element>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:element>
+  
+  </xs:sequence>
+</xs:complexType>

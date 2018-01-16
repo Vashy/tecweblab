@@ -258,6 +258,21 @@ th, td {
 }
 
 
+button, .submit {
+  display: block;
+  margin: auto;
+  background-color: #cc0000;
+  color: #fff;
+  padding: 2%;
+  cursor: pointer;
+  
+}
+
+form {
+  width: 50%;
+  margin: auto;
+}
+
 .clearfix:after {
   visibility: hidden;
   display: block;

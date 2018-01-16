@@ -1,0 +1,18 @@
+<!ELEMENT protagonisti (protagonista*)>
+<!ATTLIST protagonisti serie CDATA #REQUIRED>
+
+<!ELEMENT protagonista (specializzazione, qi, img, presenteIn, descr)>
+<!ATTLIST protagonista nome CDATA #REQUIERD>
+
+<!ELEMENT specializzazione (#PCDATA)>
+<!ELEMENT qi (#PCDATA)>
+<!ELEMENT presenteIn (stagione*)>
+<!ELEMENT stagione (#PCDATA)>
+
+<!ELEMENT img EMPTY>
+<!ATTLIST img alt CDATA #REQUIRED
+              src CDATA #REQUIRED>
+
+<!ELEMENT descr (p+)>
+<!ELEMENT p (#PCDATA|em)*>
+<!ELEMENT em (#PCDATA)>
